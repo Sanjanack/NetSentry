@@ -1,0 +1,10 @@
+cookie:
+  expiry_days: 30
+  key: netsentry_key
+  name: netsentry_cookie
+credentials:
+  usernames:
+    admin:
+      email: admin@example.com
+      name: Admin User
+      password: $2b$12$rK5OjANIcEwJGRSyS7gNPOKszEahahRaOuEJZJ2WwEtR0Ueg8E8ti
