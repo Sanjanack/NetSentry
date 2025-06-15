@@ -139,6 +139,9 @@ class Database:
             packet_size = random.randint(64, 1500)
             packet_count = random.randint(1, 1000)
             
+            # Generate description
+            description = random.choice(alert_info['descriptions'])
+            
             alert = {
                 'timestamp': timestamp,
                 'source_ip': source_ip,
@@ -148,7 +151,7 @@ class Database:
                 'protocol': random.choice(['TCP', 'UDP']),
                 'alert_type': alert_type,
                 'severity': severity,
-                'description': random.choice(alert_info['descriptions']),
+                'description': description,
                 'packet_size': packet_size,
                 'packet_count': packet_count
             }
